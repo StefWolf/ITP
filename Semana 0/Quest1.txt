@@ -1,0 +1,35 @@
+/* Jogo da Adedonha: Simular a escolha da letra pela quantidade de dedos inseridos por 4 jogadores */
+
+#include <stdio.h>
+
+int main()
+{
+    char letra = 64;
+    int dedos;
+    int total = 0;
+    
+    printf("------------------------JOGO DA ADEDONHA---------------\nVocê só pode utilizar valores de 0 a 10, assim como seus dedos\n");
+    for(int i = 0; i < 4; i++){
+        printf("Jogador %d digite seu valor: ", i);
+        scanf("%d", &dedos);
+        if(dedos > 10 || dedos < 0){
+            while(dedos > 10 || dedos < 0){
+                printf("Jogador %d, você só pode utilizar até 10 dedos, vamos! digite novamente: ", i);
+                scanf("%d", &dedos);
+            }
+        }
+        total = total + dedos;
+    }
+    if (total == 0){
+        printf("Ei! Ninguém colocou nada!");
+    }
+    else{
+        letra = letra + total;
+    
+        printf("Letra: %c", letra);
+    }
+    
+
+    
+    return 0;
+}
