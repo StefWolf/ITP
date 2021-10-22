@@ -1,5 +1,3 @@
-/* Jogo da Adedonha: Simular a escolha da letra pela quantidade de dedos inseridos por 4 jogadores */
-
 #include <stdio.h>
 
 int main()
@@ -23,10 +21,14 @@ int main()
     if (total == 0){
         printf("Ei! Ninguém colocou nada!");
     }
-    else{
+    else if (total > 1 && total <= 26){
         letra = letra + total;
-    
         printf("Letra: %c", letra);
+    }
+    else if(total > 26){
+        total = total - 26;
+        letra = letra + total;
+        printf("Letra: %c e total: %d", letra, total);
     }
     
 
