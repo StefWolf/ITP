@@ -1,0 +1,10 @@
+Muitas vezes na computação, precisamos de algoritmos para resolver problemas envolvendo representações geométricas, 
+seja nos jogos, mapas ou outras aplicações que utilizam essas formas. Um dos problemas mais comuns é saber se um ponto 
+ou não está dentro ou fora de um polígono. Dependendo do cenário, isso pode ficar mais complexo.
+
+Nesse problema, vocês vão apenas verificar se um ponto está dentro de um retângulo ou não. Seu programa lerá dois
+ pares de valores inteiros representando a coordenada de dois pontos em um retângulo: o valor do canto esquerdo superior
+  e o valor do canto direito inferior. Em seguida ele lerá dois inteiros representando a coordenada de um ponto qualquer.
+   Seu programa deve imprimir se esse ponto está dentro ou fora da área delimitada pelo retângulo.
+
+Observe bem os casos de entrada e saída para verificar a formatação dos dados e da impressão.

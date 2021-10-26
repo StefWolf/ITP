@@ -1,37 +1,20 @@
-#include <stdio.h>
+Uma brincadeira muito popular entre crianças velhas é a adedonha: as crianças colocam valores numéricos com os
+ dedos para escolher uma das letras do alfabeto, e então precisam responder palavras de uma categoria de informações
+  escolhidas que começam com aquela letra.
 
-int main()
-{
-    char letra = 64;
-    int dedos;
-    int total = 0;
-    
-    printf("------------------------JOGO DA ADEDONHA---------------\nVocê só pode utilizar valores de 0 a 10, assim como seus dedos\n");
-    for(int i = 0; i < 4; i++){
-        printf("Jogador %d digite seu valor: ", i);
-        scanf("%d", &dedos);
-        if(dedos > 10 || dedos < 0){
-            while(dedos > 10 || dedos < 0){
-                printf("Jogador %d, você só pode utilizar até 10 dedos, vamos! digite novamente: ", i);
-                scanf("%d", &dedos);
-            }
-        }
-        total = total + dedos;
-    }
-    if (total == 0){
-        printf("Ei! Ninguém colocou nada!");
-    }
-    else if (total > 1 && total <= 26){
-        letra = letra + total;
-        printf("Letra: %c", letra);
-    }
-    else if(total > 26){
-        total = total - 26;
-        letra = letra + total;
-        printf("Letra: %c e total: %d", letra, total);
-    }
-    
+Por exemplo, se a categoria for Personagens de Naruto e a soma dos dedos colocados for 11, então dará a letra K,
+ e o pessoal vai começar a responder Kaguya, Kakashi, etc...
 
-    
-    return 0;
-}
+Para ajudar os vários pais cansados de jogar adedonha, vocês vão fazer um programa que facilita pelo menos
+ um dos trabalhos dos jogadores: a contagem de dedos para saber qual é a letra.
+
+O seu programa receberá 4 valores inteiros, correspondendo a quantidade de dedos que foram colocados por cada 
+um de quatro jogadores (sempre serão 4). O valor desses dedos pode ser de 0 (não colocou nenhum) até 10. 
+Seu programa então deve imprimir uma mensagem no seguinte formato:
+
+- "Ei! Ninguém colocou nada!" - caso o total de dedos colocado seja 0.
+
+- "Letra: @" - onde @ é a letra a ser impressa (A, B, C, D....Z, sempre maiúscula). Essa impressão ocorre 
+quando o total de dedos colocados for maior que zero.
+
+Atente para os casos de teste para ver a formatação da entrada e saída do programa!
