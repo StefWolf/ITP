@@ -15,4 +15,4 @@
 - [x] Questão 1 (25/10/2021)
 - [x] Questão 2 (25/10/2021)
 - [ ] Questão 3
-- [ ] Questão 4
+- [x] Questão 4
