@@ -1,0 +1,29 @@
+Uma nova startup foi selecionada para o processo de incubação no Inova Metrópole (Incubadora do IMD). Eles estão criando um software para auxiliar
+ de engenheiros e arquitetos e precisam de pessoas que conheçam bem como desenvolver softwares de desenho vetorial.
+
+Eles te chamaram para implementar uma parte essencial do projeto: a interface do usuário. Mas, nesse caso, a interface não é feita só de botões e menus.
+ No caso, eles querem que você verifique se o usuário clicou sobre uma dos pontos de uma figura do desenho.
+
+Uma primeira abordagem é verificar se o clique do mouse foi exatamente sobre um ponto de uma das retas que define o desenho. Porém, essa solução 
+só funciona se o usuário clicar exatamente sobre o ponto... o que prejudica a experiência do usuário. O clique pode ter um certo nível de erro. 
+Dessa forma, se o usuário clicar "próximo" a um ponto, será considerado como se ele tivesse clicado sobre o ponto.
+
+Para saber se o clique do mouse está próximo a um ponto, precisamos calcular a distância entre esses pontos. A distância entre os pontos A e B, 
+definidos pelas coordenadas ​ (xa, ya) e (xb, yb) respectivamente é:
+
+​d=(xa−xb)2+(ya−yb)2d = \sqrt{(x_a - x_b)^2 + (y_a - y_b)^2}d=(xa​−xb​)2+(ya​−yb​)2
+
+​​
+
+Depois que d é calculado, verificamos se ele é menor que um valor limite L. Se for, é porque o clique do mouse foi próximo ao ponto. Para os 
+nossos testes, iremos considerar que o limite L é 3. Isso significa que o usuário pode clicar até 3 pixels de distância e um ponto da figura 
+que será considerado sobre o mesmo.
+
+Para mostrar à equipe da startup que você sabe lidar com esse problema, escreva um programa que lê da entrada-padrão as coordenadas do clique 
+do mouse e os pontos de um figura. A figura é definida por um valor inteiro N (sendo N >= 3) seguido de N linhas, cada uma contendo as coordenadas 
+de um ponto da figura.
+
+A saída de seu programa deve ser S caso o clique tenha sido sobre um dos pontos figura ou N caso contrário.
+
+Programar bem não é só resolver o problema, você precisa também mostrar à equipe da startup que sabe organizar seu código.
+ Crie uma função para testar os pontos e usa-a no rotina main().

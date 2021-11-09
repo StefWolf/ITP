@@ -14,5 +14,9 @@
 
 - [x] Questão 1 (25/10/2021)
 - [x] Questão 2 (25/10/2021)
-- [x] Questão 3
-- [x] Questão 4
+- [x] Questão 3 (25/10/2021)
+- [x] Questão 4 (25/10/2021)
+
+## Semana 2:
+
+- [x] Questão 1 (08/10/2021)
