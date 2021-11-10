@@ -1,0 +1,39 @@
+Uma nova startup foi selecionada para o processo de incubação no Inova Metrópole (Incubadora do IMD). Eles estão criando um software para auxiliar
+ de engenheiros e arquitetos e precisam de pessoas que conheçam bem como desenvolver softwares de desenho vetorial.
+
+Eles te chamaram para implementar uma parte essencial do projeto: a interface do usuário. Mas, nesse caso, a interface não é feita só de botões e menus.
+ No caso, eles querem que você verifique se o usuário clicou sobre uma das linha de uma figura do desenho.
+
+Uma primeira abordagem é verificar se o clique do mouse foi sobre um ponto de uma das retas que define o desenho. Mas as retas contêm apenas as
+ coordenadas dos pontos de suas extremidades (x1, y1) e (x2, y2). Como saber se o clique em um ponto qualquer (x, y) faz parte de uma reta?
+
+Uma possível solução é achar a equação da reta e depois verificar se a posição do clique do mouse atende a equação. Esta solução simples
+ considera a reta infinita (não acaba nas extremidades), mas a equipe da startup disse que essa abordagem já era suficiente.
+
+Há várias formas de representar uma reta. Uma delas usa a máxima "dois pontos definem uma reta" e define a seguinte equação:
+
+​(y−y1)=m.(x−x1)(y - y_1) = m.(x - x_1)(y−y1​)=m.(x−x1​)​
+
+onde:
+  m: é a inclinação da reta, definida por (y2−y1)/(x2−x1)(y_2 - y_1) / (x_2 - x_1)(y2​−y1​)/(x2​−x1​)​
+  x1 e y1: são as coordenadas de um dos pontos da reta
+  x2 e y2: são as coordenadas do outro ponto da reta
+  x e y: são as incógnitas da equação. Ou seja, para um dado x, teremos um y específico (e vice-versa).
+
+Para mostrar à equipe da startup que você sabe lidar com esse problema, escreva um programa que lê da entrada-padrão as 
+coordenadas do clique do mouse e os pontos de um figura. A figura é definida por um valor inteiro N (sendo N >= 3) seguido
+ de N linhas, cada uma contendo as coordenadas de um ponto da figura. Os pontos estarão em sequência, então você deve testar 
+ se o clique foi na reta definida pelo 1ª e 2º pontos, depois pelo 2º e 3º, depois pelo 3º e 4º, e assim por diante até o último. 
+ Por fim, testa-se também do último ponto ao 1º.
+
+A saída de seu programa deve ser S caso o clique tenha sido sobre uma das retas da figura ou N caso contrário.
+
+Programar bem não é só resolver o problema, você precisa também mostrar à equipe da startup que sabe organizar seu código.
+ Crie uma função para testar os pontos e usa-a no rotina main().
+
+Obs1: Para evitar problemas de precisão na equação da reta, lide com valores inteiros na sua solução (é como se você estivesse 
+lidando com pixels e não com valores numéricos reais... de precisão infinita), exceto quando for calcular a inclinação da reta 
+(m). A inclinação precisa ser representada com um número real (R) para que a reta seja calculada corretamente.
+
+Obs2: Lidando com valores inteiros, é fácil que x1 seja igual a x2, logo (y2- y1) / (x2 - x1) terá uma divisão por 0. Você deve
+ tratar esse problema sabendo que, nesse caso, o clique será sobre a reta se x for igual a x1 (ou x2... pois são iguais).
