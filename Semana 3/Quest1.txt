@@ -1,0 +1,25 @@
+Ao longo da rua existem N prédios de largura igual, mas com número de andares diferentes.
+ Quase todos seus amigos moram em algum desses prédios e eles estavam discutindo para saber
+  quem mora mais longe. Para facilitar a discussão, implemente um programa que calcule a maior
+   distância entre dois apartamentos quaisquer da rua.
+
+A distância entre dois apartamentos funciona assim: para um amigo X visitar um amigo Y, que
+ mora num prédio diferente do dele, ele deve descer A andares até o térreo do seu prédio,
+  depois andar para a esquerda ou direita, dependendo do lado para o qual seu colega mora, 
+  por P prédios, depois subir B andares até o apartamento do amigo. A distância entre X e Y 
+  será, então, A + P + B. A figura abaixo mostra um exemplo onde estão marcados dois andares
+   de prédios diferentes para os quais a distância é 12.
+
+Seu programa deve ler uma sequência de valores correspondendo ao números de andares de cada prédio 
+da rua e calcular a maior distância possível entre dois apartamentos quaisquer na rua.
+
+A primeira linha de entrada contém um inteiro N representando o número de prédios na rua.
+ A segunda linha contém N valores inteiros positivos, representando o número de andares de
+  cada prédio, sem contar o térreo. Ou seja, se um prédio possui 19 andares, quem mora no
+   último andar precisa descer 19 andares até o térreo.
+
+Considerando que seus amigos moram em diferentes prédios, a saída do seu programa deve ser
+ um único valor inteiro contendo a maior distância possível entre os apartamentos de prédios
+  diferentes da rua.
+
+(adaptado da OBI Programação Nível 1 Fase 1, 2019).
