@@ -25,4 +25,6 @@
 ## Semana 3:
 
 - [x] Questão 1 (10/11/2021)
+- [x] Questão 2
+- [x] Questão 3 (16/11/2021)
 
