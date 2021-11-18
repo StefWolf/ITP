@@ -1,0 +1,3 @@
+Leia valores inteiros para formar a matriz A3x5. Gerar e imprimir uma matriz (vetor) SL (soma das
+
+3 linhas), onde cada elemento é a soma dos elementos de uma linha da matriz A.
