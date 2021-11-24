@@ -1,0 +1,17 @@
+Criar um algoritmo que entre com valores inteiros para uma matriz m 3 x 3 e imprima
+
+a matriz final, conforme mostrado a seguir:
+
+[ 1  8  9
+
+  4  5  6
+
+  7  2  3 ]
+
+a matriz gira 90º
+
+[  7  4  1 
+
+  2   5  8
+
+  3   6  9]
