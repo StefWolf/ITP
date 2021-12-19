@@ -1,0 +1,62 @@
+Os professores de ITP começaram a se viciar em um dos jogos mais perigosos da face da terra...o Cartola FC. Todos os dias eles avidamente acompanham os resultados das partidas, em busca de descobrir quem são as melhores contratações e como foi o desempenho do seu time.
+
+Um certo professor careca que não será nomeado está em último lugar com zero pontos, e resolveu fazer um programa que confere se a tabela de classificação exibida pelo google está correta, de forma que ele possa orientar suas próximas escolhas baseadas nela. O problema é que ele não sabe programar, e pediu que a turma fizesse o programa.
+
+O seu programa deve ler um número inteiro T, indicando a quantidade de times, seguido por T linhas no seguinte formato:
+
+nome; vitorias empates derrotas gols_feitos gols_sofridos
+
+onde:
+
+    Nome: nome do time. Uma string composta de no máximo 200 caracteres.
+
+    Vitorias, empates e derrotas: resultados das partidas jogadas. Valores inteiros.
+
+    Gols Feitos e Gols sofridos: valores inteiros representando a quantidade de gols que o time marcou e sofreu.
+
+
+O seu programa imprimirá como saída a tabela de classificação final do campeonato contendo:
+
+- Nome do time;
+
+- Pontos obtidos pelo time. Cada vitória conta 3 pontos, e empates contam 1 ponto;
+
+- Número total de partidas;
+
+- Número de vitórias;
+
+- Número de empates;
+
+- Número de derrotas;
+
+- Gols Feitos;
+
+- Gols Sofridos;
+
+- Saldo de Gols;
+
+- Lista dos times que estão na zona da Libertadores (6 primeiros no campeonato);
+
+- Lista dos times que estão na zona de rebaixamento (4 últimos. A impressão deve iniciar do último lugar até o primeiro na zona).
+
+Atente aos exemplos de saída para verificar a formatação da impressão.
+
+
+A impressão deve ocorrer na ordem de classificação do campeonato. A posição dos times é definido em função dos seguintes critérios:
+
+- Pontos: o time com mais pontos fica a frente do time com menos pontos.
+
+- Número de vitórias: em caso de empate no número de pontos, considera-se na frente o time com mais vitórias;
+
+- Saldo de gols: em caso de empate nos critérios anteriores, considera-se na frente o time com maior saldo de gols.
+
+
+Seu programa deve conter:
+
+- Um tipo de dado Time, que armazena as informações necessárias de cada time do campeonato;
+
+- Uma função para realizar a leitura dos times da entrada;
+
+- Uma função para realizar a impressão da tabela;
+
+DICA: a impressão será mais fácil se você ordenar os times de acordo com os critérios do enunciado. Para isso, dá uma olhada no exemplo do material com a função Bubblesort, que poderá ser utilizada aqui!

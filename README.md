@@ -35,9 +35,6 @@
 - [x] Questão 3 (21/11/2021)
 - [x] Questão 4 (21/11/2021)
 
-## Semana 5: Strings
+## Semana 7: Registros
 
-- [] Questão 1
-- [] Questão 2
-- [] Questão 3
-- [] Questão 4
+- [x] Questão 3 (19/12/2021)
