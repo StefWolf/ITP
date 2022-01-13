@@ -4,6 +4,9 @@
 -> Linguagem: C
 -> Compilador: https://replit.com e VsCode
 
+## Documentação:
+-> Como Atribuir valores a um vetor por função recursiva: /Estudos/Recursão/AtribuirVetor.c
+
 
 ## Semana 0:
 
