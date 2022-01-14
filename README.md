@@ -41,3 +41,7 @@
 ## Semana 7: Registros
 
 - [x] Questão 3 (19/12/2021)
+
+## Semana 8 PR: Recursão
+
+- [x] Questão 1 (13/01/2022)

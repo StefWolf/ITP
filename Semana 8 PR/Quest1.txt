@@ -1,0 +1,16 @@
+Você acabou de entrar num estágio no IBGE sendo alocado para o desenvolvimento de programas no departamento de estatística. 
+O seu orientado de estágio acabou de aprender conceitos de recursão e está entusiasmado com as possíveis aplicações.
+ Assim, ele elaborou algumas tarefas nesse contexto.
+
+A primeira tarefa consiste no cálculo do desvio padrão de um conjunto de valores. Ele foi bem claro ao explicar que deve 
+ser utilizada a fórmula a seguir:
+
+​∑(xi2)/n−(∑xi/n)2\sqrt{ \sum(x_i^2)/n - (\sum x_i/n)^2 }∑(xi2​)/n−(∑xi​/n)2
+
+​​
+
+Além disso, ele quer que todos os cálculos sejam efetuados utilizando recursão, incluindo a leitura dos dados. Desse
+ modo, os comandos de repetição como 'for', 'while' e 'do' não devem estar presentes.
+
+Por fim, a entrada consistirá em um valor nnn​​​ (n>1n>1n>1​) seguidos pelos xix_ixi​​ valores a serem utilizados no cálculo 
+do desvio padrão. A saída deve consistir num único valor correspondente ao desvio padrão considerando 4 casas decimais.
