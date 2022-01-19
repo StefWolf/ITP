@@ -7,6 +7,11 @@
 ## Documentação:
 -> Como Atribuir valores a um vetor por função recursiva: /Estudos/Recursão/AtribuirVetor.c
 
+## Debugs
+Área destinada a registrar os algoritmos que estiverem de quarentena.
+
+-> ErrorQuest2Semana8 : Questão 2 da lista de recursão. 
+
 
 ## Semana 0:
 
