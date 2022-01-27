@@ -50,3 +50,10 @@
 ## Semana 8 PR: Recursão
 
 - [x] Questão 1 (13/01/2022)
+
+## Lista EXTRA de arquivos
+
+- [x] Questão 2 (25/01/2022)
+- [x] Questão 3 (27/01/2022)
+
+
