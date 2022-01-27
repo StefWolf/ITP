@@ -9,13 +9,21 @@ void copiarArquivo(FILE *arq1, FILE *arq2){
 }
 
 int main(void) {
-  FILE *arquivo1 = fopen("teste.txt", "r");
+  char a1[100];
+  char a2[100];
+
+  scanf("%s", a1);
+  scanf("%s", a2);
+
+  //a2 = a2 + "copia";
+
+  FILE *arquivo1 = fopen(a1, "r");
 
   if(arquivo1 == NULL){
     printf("Não abriu");
   }
 
-  FILE *arquivo2 = fopen("copiado.txt", "w");
+  FILE *arquivo2 = fopen(a2, "w");
 
   if(arquivo2 == NULL){
     printf("Não foi possível encontrar o caminho do arquivo");
@@ -26,6 +34,9 @@ int main(void) {
   fclose(arquivo1);
   fclose(arquivo2);
   
+  /* gcc -o main main.c
+    ./main 
+  */
 
   return 0;
 }
