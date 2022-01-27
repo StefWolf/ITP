@@ -1,0 +1,6 @@
+Data: 27/1/2022
+Tempo inicial: 21:4:6
+Tempo final: 21:4:10
+Data: 27/1/2022
+Tempo inicial: 21:7:16
+Tempo final: 21:7:18
